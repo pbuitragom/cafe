@@ -6,6 +6,7 @@
 <title>El aroma mágico</title>
 <!-- Asegúrate de incluir el CSS de Bootstrap -->
 <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -31,7 +32,7 @@
                     </thead>
                     <tbody>
                         <tr *ngFor="let cafe of listaCafe">
-                            <td>{{ cafe.id }}</td>
+                            <td id="id">{{ cafe.id }}</td>
                             <td>{{ cafe.nombre }}</td>
                             <td>{{ cafe.tipo }}</td>
                             <td>{{ cafe.region }}</td>

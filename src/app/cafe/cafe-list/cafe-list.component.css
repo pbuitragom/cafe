@@ -1,0 +1,45 @@
+img {
+    max-width: 100%; 
+    height: auto; 
+  }
+h2 {
+    font-family: 'Indie Flower', cursive;
+    font-weight: normal;
+    font-size: 36px;
+    letter-spacing: 0;
+    color: #000000;
+    opacity: 1;
+    text-transform: none;
+  }
+
+  th {
+    background-color: #333A40; 
+    border: 1px solid #000000; 
+    padding: 8px;
+  
+    font-family: 'Inter', sans-serif; 
+    font-weight: bold; 
+    font-size: 18px; 
+    color: #FFFFFF; 
+    text-align: left;
+  }
+
+  p {
+    font-family: 'Inter', sans-serif;
+    font-weight: normal; /* 'Regular' se interpreta como el peso normal de la fuente */
+    font-size: 20px;
+    color: #000000; /* El código de color hexadecimal para negro */
+    /* Añade aquí más propiedades si necesitas */
+  }
+
+  tbody td {
+    font-family: 'Inter', sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    color: #000000;
+    padding: 8px;
+  }
+  
+  tbody td#id {
+    font-weight: bold; /* Esto aplicará el estilo en negrita al texto */
+  }
