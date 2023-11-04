@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>El aroma mágico</title>
+<!-- Asegúrate de incluir el CSS de Bootstrap -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container mt-4">
+    <h2>El aroma mágico</h2>
+    <!-- Sistema de grillas para la imagen y la tabla -->
+    <div class="row">
+        <div class="col-lg-12">
+            <!-- Clase de imagen responsive de Bootstrap -->
+            <img src="assets/imagenes/principal.png" class="img-fluid mb-3" alt="Café">
+        </div>
+        <div class="col-lg-12">
+            <!-- Tabla responsiva -->
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Nombre</th>
+                            <th>Tipo</th>
+                            <th>Región</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let cafe of listaCafe">
+                            <td>{{ cafe.id }}</td>
+                            <td>{{ cafe.nombre }}</td>
+                            <td>{{ cafe.tipo }}</td>
+                            <td>{{ cafe.region }}</td>
+                          </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p>Total café de origen: {{numCafeOrigen}}</p>
+            <p>Total café blend: {{numCafeBlend}}</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
