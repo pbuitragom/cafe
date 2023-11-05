@@ -34,13 +34,6 @@ p {
     width: 100%;
 }
   
-.table td {
-    
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2); 
-    background-clip: padding-box; 
-    box-shadow: 0px 4px 4px -2px rgba(0, 0, 0, 0.2); /* Sombra en la parte inferior */
-}
-
 /* Estilos para eliminar la sombra y la línea del último td */
 .table tr:last-child td {
     border-bottom: none;
@@ -57,4 +50,8 @@ tbody td {
 
 tbody td#id {
     font-weight: bold; /* Esto aplicará el estilo en negrita al texto */
+}
+
+.line-with-shadow {
+   color: black;
 }
