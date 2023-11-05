@@ -19,18 +19,17 @@ export class CafeListComponent implements OnInit {
   getCafes(): void {
     this.cafeService.getCafes().subscribe((listaCafe) => {
       this.listaCafe = listaCafe;
-
-      listaCafe.forEach(item => {
-
-        if (item.tipo == 'Blend'){
-          this.numCafeBlend = this.numCafeBlend + 1;
-        }else{
-          this.numCafeOrigen = this.numCafeOrigen + 1;
-        }
-      });
-
     });
   }
+
+  getNumCafeBlend(): number {
+    return this.numCafeBlend = this.listaCafe.filter(cafe => cafe.tipo === 'Blend').length;
+  }
+
+  getNumCafeOrigen(): number {
+    return this.numCafeOrigen = this.listaCafe.filter(cafe => cafe.tipo === 'Café de Origen').length;
+  }
+
 
 ngOnInit() {
     this.getCafes()
